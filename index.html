@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header section -->
+    <header class="w-full sm:w-[85%] mx-auto mt-4 mb-8">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a href="./index.html">Home</a></li>
+                      <li>
+                        <a>Shop</a>
+                      </li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a href="./index.html" class="btn btn-ghost text-xl"><img src="./images/logo.webp" alt=""> Peddy</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="./index.html">Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Shop</summary>
+                        <ul class="p-2">
+                          <li><a>Address 1</a></li>
+                          <li><a>Address 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn"><img class="w-7 " src="https://img.icons8.com/?size=100&id=7820&format=png&color=000000" alt=""></a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
+        <!-- banner section -->
+        <section class="w-[95%] sm:w-[80%] mx-auto">
+            <!-- text -->
+            <div class="text-center space-y-3 mb-12">
+            <h4 class="text-gray-500 text-lg">Bringing Families Together ❤️ </h4>
+            <h1 class="font-bold text-4xl">Your Path to Adoption Starts Here</h1>
+            <p class="text-xl text-gray-600">One stop solution for your pets</p>
+            <button class="btn bg-teal-600">View More</button>
+            </div>
+            <!-- image -->
+             <div class="flex justify-center">
+                <img src="./images/pet.webp" alt="">
+             </div>
+             <div class="text-center font-semibold space-y-3 my-12">
+              <h3 class="text-2xl">Adopt Your Best Friend</h3>
+            <p class="text-lg text-gray-500">It is a long established fact that a reader will be distracted by the readable content of a page when <br> looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+             </div>
+        </section>
+        <!-- category section -->
+        <section id="categoryContainer" class="w-[95%] sm:w-[80%] md:w-[75%] lg:w-[65%] mx-auto mb-10">
+        <!-- category btn -->
+          <div id="category" class="flex justify-evenly mb-5">
+             <!-- will be manipulated by js -->
+          </div>
+          <div class="flex justify-between items-center mb-7">
+            <h5 class="font-bold">Best Deal For You</h5>
+            <button class="btn bg-teal-600">Sort by Price</button>
+          </div>
+        <!-- category content -->
+          <div id="categoryContent" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-6 place-items-center">
+             <!-- will be manipulated by js -->
+          </div>
+        </section>
+    </main>
+    <!-- footer section -->
+        <footer class="footer bg-gray-800 text-base-content p-10 flex justify-between">
+            <!-- web details -->
+            <nav class="text-gray-300">
+                <h6 class="footer-title flex items-center gap-2 text-white"><img src="./images/logo.webp" alt="">Peddy</h6>
+              <p>Location: av. Washington 165, NY CA 54003 <br> Phone: +31 85 964 47 25 <br> Email: info@yourdomain.com <br> Openings hours: 9.00 AM - 5.00 PM</p>
+              <div class="flex gap-2"> 
+                <img class="w-6" src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="">
+                <img class="w-6" src="https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000" alt="">
+                <img class="w-6" src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="">
+                <img class="w-6" src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="">
+              </div>
+            </nav>
+            <!-- useful links -->
+            <nav class="text-gray-300">
+              <h6 class="footer-title text-white">Useful Links</h6>
+              <a class="link link-hover">Home</a>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Animals</a>
+              <a class="link link-hover">Foundation</a>
+              <a class="link link-hover">Contact</a>
+            </nav>
+            <!-- subscribe -->
+            <form class="text-gray-300">
+              <h6 class="footer-title text-white">Drop a Message</h6>
+              <fieldset class="form-control w-80">
+                <label class="label">
+                  <span class="label-text text-gray-300">Enter your email address</span>
+                </label>
+                <div class="join">
+                  <input
+                    type="text"
+                    placeholder="username@site.com"
+                    class="input input-bordered join-item" />
+                  <button class="btn bg-teal-600 join-item">Subscribe</button>
+                </div>
+              </fieldset>
+            </form>
+        </footer>
+        <!-- modal -->
+        <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <!-- modal content -->
+            <div id="modalContent">
+              <!-- will be manipulated by js -->
+            </div>
+            <div>
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn text-teal-500 bg-sky-100 w-full mt-4">Close</button>
+              </form>
+            </div>
+          </div>
+         </dialog>
+    <!-- js file linked -->
+    <script src="./index.js"></script>
+</body>
+</html>
